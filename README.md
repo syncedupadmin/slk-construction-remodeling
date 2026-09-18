@@ -1,6 +1,6 @@
 # SLK Construction and Remodeling demo
 
-Standalone Next.js 16 App Router demonstration for SLK Construction and Remodeling. This is a noindex demo and is not deployed or connected to GitHub.
+Standalone Next.js 16 App Router demonstration for SLK Construction and Remodeling. This is a noindex review site, connected to its dedicated GitHub repository and Vercel project.
 
 ## Verified business sources
 

@@ -7,3 +7,4 @@ out
 qa-*.png
 playwright-report
 test-results
+artifacts/
