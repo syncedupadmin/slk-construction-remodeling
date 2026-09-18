@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://slk-construction-demo.vercel.app";
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://slk-construction-remodeling.vercel.app";
 export const GOOGLE_BUSINESS_URL = "https://www.google.com/maps/place/SLK+Construction+and+Remodeling/@46.9295945,-109.283302,9z/data=!3m1!4b1!4m6!3m5!1s0x85244b63891228d9:0x5d5472f601c6feca!8m2!3d46.9295945!4d-109.283302!16s%2Fg%2F11zdd14v6j?entry=ttu";
 
 export function siteMetadata(overrides: Partial<Metadata> = {}): Metadata {
