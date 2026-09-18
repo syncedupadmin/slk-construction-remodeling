@@ -1,0 +1,9 @@
+node_modules
+.next
+.vercel
+out
+*.log
+*.tsbuildinfo
+qa-*.png
+playwright-report
+test-results
