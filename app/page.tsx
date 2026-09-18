@@ -1,10 +1,9 @@
 import Image from "next/image";
-import { MobileMenu } from "../components/MobileMenu";
+import { SiteHeader } from "../components/SiteHeader";
 import { GOOGLE_BUSINESS_URL, siteMetadata } from "../lib/site";
 
 export const metadata = siteMetadata({ title: "Construction and Remodeling in Lewistown, MT" });
 
-const nav = [{ label: "Services", href: "#services" }, { label: "Work", href: "#work" }, { label: "Service area", href: "#area" }, { label: "Contact", href: "#contact" }];
 const services = [
   ["Seamless gutters", "New seamless gutter work and repair, planned around the way your home handles Montana weather."],
   ["Construction + structural repairs", "Practical construction work and structural repairs with an eye for the details that keep a home sound."],
@@ -16,7 +15,7 @@ const services = [
 
 export default function HomePage() {
   return <>
-    <header className="site-header"><div className="shell header-inner"><a className="brand" href="#main" aria-label="SLK Construction and Remodeling home"><Image src="/logo.png" width={280} height={280} alt="SLK Construction and Remodeling logo" priority /></a><MobileMenu items={nav} /><nav className="desktop-nav" aria-label="Primary navigation"><ul>{nav.map(item => <li key={item.href}><a href={item.href}>{item.label}</a></li>)}</ul></nav><a className="header-call" href="tel:+14063502113">406-350-2113</a></div></header>
+    <SiteHeader />
     <main id="main">
       <section className="hero" aria-labelledby="hero-title"><div className="hero-grid" /><div className="shell hero-content"><p className="eyebrow">Lewistown · Fergus County · Montana</p><h1 id="hero-title">Built with care. Finished with precision.</h1><p className="hero-copy">SLK Construction and Remodeling brings careful construction, seamless gutters, structural repairs, and remodeling to the homes and communities of Central Montana.</p><div className="actions"><a className="button primary" href="https://slkseamlessgutters.com/contact">Request a site assessment</a><a className="button secondary" href="tel:+14063502113">Call 406-350-2113</a></div></div></section>
       <section className="section" id="services" aria-labelledby="services-title"><div className="shell"><div className="section-header"><p className="eyebrow">What we do</p><div><h2 id="services-title">The work behind a better home.</h2><p className="section-intro">From the first look at your property to the last sweep of the jobsite, the process stays clear, practical, and respectful of your home.</p></div></div><div className="service-grid">{services.map(([title, body]) => <article className="service" key={title}><h3>{title}</h3><p>{body}</p></article>)}</div></div></section>
